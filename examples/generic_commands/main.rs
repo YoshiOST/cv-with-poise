@@ -21,3 +21,18 @@ async fn main() {
     let _example1 = example::<(), ()>();
     let _example2 = example::<String, Box<dyn std::error::Error>>();
 }
+
+/// Description of the command here
+///
+/// Here you can explain how the command \
+/// is used and how it works.
+#[poise::command(prefix_command, /* add more optional command settings here, like slash_command */)]
+async fn cv(
+    ctx: Context<'_>,
+    #[description = "Description of arg1 here"] arg1: serenity::Member,
+    #[description = "Description of arg2 here"] arg2: Option<u32>,
+) -> Result<(), Error> {
+    // Command code here
+
+    Ok(())
+}

@@ -18,6 +18,16 @@ tracing = { version = "0.1.40", features = ["log"] } # warning about weird state
 derivative = "2.2.0"
 parking_lot = "0.12.1"
 
+bible = { path = "lib/bible" }
+twitch = { path = "lib/twitch" }
+crossterm = "^0.27.0"
+
+dotenv = "^0.15.0"
+reqwest = { version = "^0.11.24", features = ["json"] }
+strum = "^0.26.1"
+strum_macros = "^0.26.1"
+lazy_static = "1.4.0"
+
 [dependencies.serenity]
 default-features = false
 features = ["builder", "client", "gateway", "model", "utils", "collector", "framework"]
@@ -32,6 +42,7 @@ fluent = "0.16.0"
 intl-memoizer = "0.5.1"
 fluent-syntax = "0.11"
 rand = "0.8.5"
+criterion = {version = "0.5.1", features = ["html_reports"]}
 
 [features]
 default = ["serenity/rustls_backend", "cache", "chrono", "handle_panics"]
@@ -48,3 +59,7 @@ handle_panics = []
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "doc_nightly"]
+
+[[bench]]
+name = "bible_benchmark"
+harness = false
