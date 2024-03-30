@@ -18,7 +18,7 @@ This project is built with the event handler example. Built on windows... deal w
    - SERVER MEMBERS INTENT
    - MESSAGE CONTENT INTENT
 4. Make sure you got [Rust](https://www.rust-lang.org/learn/get-started) language on your computer!
-
+5. Add compatible formats of bibles into the bibles folder. an example is here [sample formats](https://github.com/EveryGoodWork/ChapterVerse/tree/main/bibles)
 ## 1. BUILD
 go to the root of the project and.. use 
 ```cargo build --example event_handler```
