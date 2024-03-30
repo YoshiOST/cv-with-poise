@@ -10,7 +10,17 @@
 This project is built with the event handler example. Built on windows... deal with it 😂
 
 # How to use
+## Pre-requisites
+1. Make sure the bot is made in [Discord Developer Portal]([https://pages.github.com/](https://discord.com/developers/docs/quick-start/getting-started))
+2. In the 4th page, labelled bot, keep your token safe as that will be needed below.
+3. Make sure the __Privileged Gateway Intents__ are all toggled,
+   - PRESENCE INTENT
+   - SERVER MEMBERS INTENT
+   - MESSAGE CONTENT INTENT
+4. Make sure you got [Rust](https://www.rust-lang.org/learn/get-started) language on your computer!
+
 ## 1. BUILD
+go to the root of the project and.. use 
 ```cargo build --example event_handler```
 
 ## 2. RUN
